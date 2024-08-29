@@ -42,8 +42,26 @@ COMMIT :
     For professional commit : 
     https://www.conventionalcommits.org/en/v1.0.0/
 
+    git commit --amend - to edit the commit message
+
 STATUS 
     git status - to check the status of all files
 DIFF
     git diff - to see the diff between edited files
+
+BRANCHING :
+    If two or more peoples accessing same code may be chances to conflict
+    to prevent that BRANCHING concept is came.
+
+    branch Main - main branch is fully running code (both backend frotend)
+           frontend - frontend dev created a branch for him to work his feat.
+           backend  - backend dev created a branch for him to work his feat.
+    
+    git branch                    - to view all branch
+    git branch branch_name        - to create new branch and stayed in old branch
+    git checkout -b "branch_name" - to create new branch and switched to new branch
+    git checkout                  - to saw status for currect branch
+    git checkout branch_name      - to go another branch
+    git push origin branch_name   - to push particular pranch (origin - remote repo link)
+
     
