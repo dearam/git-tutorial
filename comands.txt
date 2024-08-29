@@ -63,7 +63,7 @@ BRANCHING :
     git checkout                  - to saw status for currect branch
     git checkout branch_name      - to go another branch
     git push origin branch_name   - to push particular branch (origin - remote repo link)
-    git pull oriigin branch_name  - to pull form particulat branch
+    git pull origin branch_name  - to pull form particulat branch
 
 MERGE CONFLICT :
     SCENARIO :
@@ -76,3 +76,18 @@ MERGE CONFLICT :
     7. frontend dev - again push not pushed and updated.
 
 GIT STASH(git Restore bin):
+
+    git stash     - to save in restore bin in current code
+    git stash pop - to getting last updated code in bin
+
+        1. frontend dev - pulled the index.html and made changes
+        2. backend dev  - pulled the index.html and made changes and push that code
+        3. frontend dev - forget to add and commit directly pulling code.
+            Same SCENARIO but frontend dev didn't add and commit directly pulling 
+            it show aborting ( like your code going to vanish from both repo )
+        3. frontend dev - git stash and put his code into bin.
+        4. frontend dev - then git pull and getting the remote code.
+        5. frontend dev - git stash pop getting his last bin code and updated code.
+            then
+        6. frontend dev - pushed the index.html updated code to the remote
+        7. frontend dev - both updated code pushed.
