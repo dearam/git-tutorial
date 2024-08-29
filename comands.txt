@@ -1,3 +1,6 @@
+GIT - IT'S A VERSION CONTROL APP.
+
+
 If you want to Authenticate using git ssh key
     - ssh-keygen -t rsa -b 4096 -C "your_email@example.com" ( to generate public ssh key for you own) (save it)
 
@@ -57,13 +60,15 @@ BRANCHING :
            frontend - frontend dev created a branch for him to work his feat.
            backend  - backend dev created a branch for him to work his feat.
     
-    git branch                    - to view all branch
+    git branch                    - to view all branch (local repo)
+    git branch -a                 - to view both local & remote branch
     git branch branch_name        - to create new branch and stayed in old branch
     git checkout -b "branch_name" - to create new branch and switched to new branch
     git checkout                  - to saw status for currect branch
     git checkout branch_name      - to go another branch
     git push origin branch_name   - to push particular branch (origin - remote repo link)
-    git pull origin branch_name  - to pull form particulat branch
+    git pull origin branch_name   - to pull form particulat branch
+    git branch -M "rename_branc"  - to rename the current branch name 
 
 MERGE CONFLICT :
     SCENARIO :
