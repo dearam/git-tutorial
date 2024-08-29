@@ -62,6 +62,17 @@ BRANCHING :
     git checkout -b "branch_name" - to create new branch and switched to new branch
     git checkout                  - to saw status for currect branch
     git checkout branch_name      - to go another branch
-    git push origin branch_name   - to push particular pranch (origin - remote repo link)
+    git push origin branch_name   - to push particular branch (origin - remote repo link)
+    git pull oriigin branch_name  - to pull form particulat branch
 
-    
+MERGE CONFLICT :
+    SCENARIO :
+    1. frontend dev - pulled the index.html and made changes
+    2. backend dev  - pulled the index.html and made changes and push that code
+    3. frontend dev - (add-committed) try to push the code but not pushing bcoz backend dev update the remote code
+    4. frontend dev - pulled the index.html updated code from remote
+    5. frontend dev - Merge conflict
+    6. frontend dev - discused with the backend dev (accept my change,backend dev change,both changes)
+    7. frontend dev - again push not pushed and updated.
+
+GIT STASH(git Restore bin):
