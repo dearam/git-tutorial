@@ -34,10 +34,16 @@ STAGING & UNSTAGING
     pushing to remote  - git push
     Pulling from repote- git pull
 
+Abbrevations:
+    U - Unstage 
+    M - Modified
+
 COMMIT :
     For professional commit : 
     https://www.conventionalcommits.org/en/v1.0.0/
 
 STATUS 
     git status - to check the status of all files
+DIFF
+    git diff - to see the diff between edited files
     
