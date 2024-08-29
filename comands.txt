@@ -1,0 +1,43 @@
+If you want to Authenticate using git ssh key
+    - ssh-keygen -t rsa -b 4096 -C "your_email@example.com" ( to generate public ssh key for you own) (save it)
+
+    Need to ssh key to the ssh agent in your local sys
+
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+    - cat ~/.ssh/id_rsa (to view public ssh key)
+    Go to Github id
+    - find ssh & gpg keys add your public key there
+    
+    To check
+    - ssh -T git@github.com (it show your auth status)
+
+To see user name & email
+    - git config --global --list
+    - git config --global user.name
+    - git config --global user.email
+    // to set
+    - git config --global user.name "username"
+    - git config --global user.email "useremail"
+
+To ensure local repo
+    - git clone your_repo_link
+
+STAGING & UNSTAGING
+
+    local-------->staging area------------>repository----------->remote repo
+         git add               git commit             git push
+
+    Unstage            - just created/edited a file.
+    Ready For staging  - git add .\filename.txt 
+    Staged and info    - git commit -m "message content"
+    pushing to remote  - git push
+    Pulling from repote- git pull
+
+COMMIT :
+    For professional commit : 
+    https://www.conventionalcommits.org/en/v1.0.0/
+
+STATUS 
+    git status - to check the status of all files
+    
